@@ -1,0 +1,13 @@
+/*
+* NÃO ENTENDI
+* ÂO ENTENDI
+* O ENTENDI
+*  ENTENDI
+* ENTENDI
+* NTENDI
+* TENDI
+* ENDI
+* NDI
+* DI
+* I
+*/
