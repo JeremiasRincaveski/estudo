@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGPD</title>
+    <style>
+        input[type=text],
+        [type=number],[type=email] {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        u{
+            color: blue;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 15px;
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Preencha para baixar o material gratuito</p>
+        <label for="seuNome">Seu nome:*</label>
+        <input type="text" name="seuNome" id="nome">
+        <label for="nomeEmpresa">Nome da empresa:*</label>
+        <input type="text" name="nomeEmpresa" id="empresa">
+        <label for="seuEmail">Seu e-mail:*</label>
+        <input type="email" name="seuEmail" id="email">
+        <label for="seuTelefone">Seu telefone:*</label>
+        <input type="number" name="seuTelefone" id="telefone">
+        <input type="checkbox" name="termoUsuario1" id="termo1">Você concorda com nossos termos de uso e politica de privacidade?<br>
+        <input type="checkbox" name="termoUsuario2" id="termo2">Deseja receber atualizações de noticias, eventos e ofertas?<br>
+        <label for="enviar"><u>termo e politicas de privacidade</u></label>
+        <input type="submit" name="enviar" value="ENVIAR">
+    </div>
+</body>
+
+</html>
