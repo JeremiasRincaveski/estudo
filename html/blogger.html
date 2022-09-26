@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias</title>
+    <style>
+        /*chama o elemento <div> e faz alterações toda vez que ele for chamado, muito mais simples de implementar o css*/
+        div {
+
+            border: outset;
+        }
+
+        table {
+            border: khaki;
+            color: blue;
+        }
+        /*pega o tipo do input e modifica ele, mesma coisa do <div>*/
+        input[type=text],
+        [type=number],
+        [type=email] {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!--apresentação-->
+    <div>
+        <h3>blog do Jeremias</h3>
+        <p>este é um site sobre o conhecimento adiquirido até o momento(25/09/22)</p>
+    </div>
+    <!--tabela office // css inline-->
+    <div>
+        <!--border é a grosura da borda-->
+        <table border="1">
+            <!--<tr> é uma linha horizontal-->
+            <tr>
+                <!--colspan é a quantidade de colunas que essa linha vai ocupar(se colocar um valor maior  ela não passa da tabela)-->
+                <th colspan="4">DADOS</th>
+            </tr>
+            <!---tr da uma nova linha na tabela--->
+            <tr>
+                <!---th deixa em negrito e deixa no meio--->
+                <th>nome</th>
+                <th>sobrenome</th>
+                <th>idade</th>
+                <th>faculdade</th>
+            </tr>
+            <tr>
+                <!---td deixa normal--->
+                <td>Jeremias</td>
+                <td>Rincaveski</td>
+                <td>21</td>
+                <td>ESTACIO</td>
+            </tr>
+        </table>
+        <!--aqui temos o css inline, para coisas pequenas até pode valer a pena mas fica muito melhor colocar no <head>
+        tmb podemos mudar a fonte da letra, a forma como ele é escrito(justificado, esquerda...) mas aqui temos que fazer isso toda vez com um objeto-->
+        <table border="1" align="center" width="60%">
+            <tr>
+                <th colspan="11"> ESTADOS </th>
+            </tr>
+
+            <tr>
+                <td style="color: blue;"> ACRE </td>
+                <td style="color: green;"> AC </td>
+                <td style="color: yellow;"> 13.000 </td>
+            </tr>
+
+            <tr>
+                <td style="color: blue;"> BRASILIA</td>
+                <td style="color: green;"> BR </td>
+                <td style="color: yellow;"> 33.000 </td>
+            </tr>
+
+            <tr>
+                <td style="color: blue;"> RORAIMA</td>
+                <td style="color: green;"> RR </td>
+                <td style="color: yellow;"> 90.000 </td>
+            </tr>
+
+            <tr>
+                <td style="color: blue;"> SANTA CATARINA</td>
+                <td style="color: green;"> SC </td>
+                <td style="color: yellow;"> 80.000 </td>
+            </tr>
+        </table>
+    </div>
+    <!--lista-->
+    <div>
+        <!--- lista ordenada --->
+        <ol>
+            <li>Jeremias</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ol>
+        <!--- lista avulsa --->
+        <ul>
+            <li>Jeremias</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ul>
+    </div>
+    <!--tabela para dados -->
+    <div>
+        <!-- cria uma tabela com o objetivo de receber dados-->
+        <fieldset>
+            <!-- titulo da tabela-->
+            <legend>informação de contato</legend>
+            <!-- o <p> faz ficar tudo em uma linha, <label>(usado para pegar informações tipo o
+            id de algo para usar ele) fala oque vai ter na linha, <input> mostra algo
+            para a pessoa, normalmente são colocados separados mas assim consegue economizar linha
+            porem vai ficar ruim de entender quando precisar colocar o id, name e outros atributos no
+            elemento, quando for fazer EVITAR ESSE MODELO-->
+            <p><label>E-mail<input type="E-mail" name="E-mail"></label></p>
+            <p><label>web site<input type="url" name="website"></label></p>
+            <p><label>telefone<input type="telefone" name="fone" placeholder="(00)000000000"></label></p>
+        </fieldset>
+        <fieldset>
+            <!-- aqui o nome tem que ser iguak ou não funciona, assim ele seleciona somente um valor, se deixar o "name" diferente ele deixa selecionar mais de um-->
+            <label>Na frase:"Eu sou bonito" o sujeito é</label><br>
+            <input type="radio" id="sujeito" name="nome" value="Brad">
+            <label>Brad Pit</label><br>
+            <input type="radio" id="sujeito" name="nome" value="Joâo">
+            <label>Joâo da padaria</label><br>
+            <input type="radio" id="sujeito" name="nome" value="VocêMesmo">
+            <label>Você mesmo</label><br>
+            <input type="radio" id="sujeito" name="nome" value="Meus">
+            <label>Meus pais</label><br>
+            <input type="radio" id="sujeito" name="nome" value="Eu">
+            <label>Eu</label><br><br>
+        </fieldset>
+        <fieldset>
+            <!--aqui é o formato mais normal que eu achei de mostrar a linha e mandar o input
+            ássim pfica mais facil de ler os atributos dentro do input e do label-->
+            <legend>informações do aluno</legend>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome"><br><br>
+            <input type="number" id="nGrupo" name="nGrupo" placeholder="N° de pessoas no grupo"><br><br>
+            <input type="email" id="email" name="email" placeholder="Digite o seu email"><br><br>
+            <label for="date">Data de nascimento</label><br>
+            <input type="date" id="data" name="data" placeholder="dd/mm/aaaa"><br><br>
+            <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite uma senha">
+        </fieldset>
+    </div>
+    <!--imagens // link-->
+    <div>
+        <!--<alt> forma como o sistema le caso a imagem n consiga ser caregada, muito importante usar tmb
+        para pessoas cegas quando forem tentar acesar o site-->
+        <!--pega na pasta do site-->
+        <img src="imagem1.png" alt="Livro de portugues, com palavras saindo dele">
+        <!--pega caso esteja em outra pasta-->
+        <img src="/C:/Users/aluno/Downloads/aula2/css.png">
+        <!--pega em um site-->
+        <img
+            src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo=w240-h480-rw">
+
+        <!--target = "_blank" faz abrir uma aba nova, se tirar ele vai entrar no site que a gente mandou e sair do nosso-->
+        <a href="https://www.globo.com" target="_blank">visite o site da globo.com</a>
+    </div>
+    <!--modificadores de texto-->
+    <div>
+        <!--<br> tmb quebra a linha igual "\n"-->
+        <p>Nesta frase temos <b>um termo em negrito</b> usando a tag B(não semântica)</p>
+        <p>Nesta frase, tenho <strong>um termo em destaque</strong> usando a tag STRONG (semântica)</p>
+        <h2>Italico/Ênfase</h2>
+        <p>Nesta frase, temos um<i> termo em italico</i> usando a tag I(não semântica)</p>
+        <p>Nesta frase, temos um<em> termo em ênfase</em> usando a tag EM(semântica)</p>
+        <h2>texto marcado</h2>
+        <p>podemos cirar tambem <mark>um texto marcado</mark> usando a tag MARK</p>
+        <p>e no outro paragrafo, temos <mark>outro trexo marcado</mark> no final</p>
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um<span style="font-size: 40px;"> texto grande</span> e um <small>texto pequeno</small> neste
+            paragrafo</p>
+        <h2>Texto deletado</h2>
+        <p>podemos marcar <del>um texto como excluido</del> para indicar que deve ser lido mais não considerado</p>
+        <h2>texto inserido</h2>
+        <p>podemos marcar <u>um texto como inserido</u> para dar enfase e indicar que ele foi adicionado depois</p>
+        <p>existe tambem o <u>sublinhado</u> com a tag u(não semântica)</p>
+        <h2>texto sobrescrito</h2>
+        <p>para inserir coisas do tipo x<sup>20</sup>+3</p>
+        <h2>texto subscrito</h2>
+        <p>para inserir coisas do tipo H<sub>2</sub>O</p>
+    </div>
+</body>
+
+</html>
