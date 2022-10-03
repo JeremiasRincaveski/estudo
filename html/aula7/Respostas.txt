@@ -1,24 +1,24 @@
 1	O JavaScript foi originalmente desenvolvido sob o nome de Mocha, posteriormente teve seu nome modificado para LiveScript e, por fim, JavaScript. LiveScript foi o nome oficial da linguagem quando ela foi lançada pela primeira
 	vez na versão beta do navegador Netscape 2.0, em setembro de 1995, mas teve seu nome alterado em um anúncio conjunto com a Sun Microsystems, em dezembro do mesmo ano, quando foi implementado no navegador Netscape
-	Em Novembro de 1996 foi criado a normativa ECMA ela é responsavel pelos padrões e normativas do javascript(ECMAScript)
+	Em Novembro de 1996 foi criado a normativa ECMA ela é responsável pelos padrões e normativas do javascript (ECMAScript)
 
-2	java é uma linguaguem compilada que precisa de uma maquina virtual ou um browser, é uma lingua orientada a objetos.
-	javascript é uma linguagem interpretada que precisa de um browser, é uma linguam de script orientada a objetos
+2	java é uma linguagem compilada que precisa de uma máquina virtual ou um browser, é uma língua orientada a objetos.
+	javascript é uma linguagem interpretada que precisa de um browser, é uma linguagem de script orientada a objetos
 
-3	podemos trabalhar com eles chamando na linha de codigo <body> com o <script> e mandando executar alguma coisa ou podemos chamar ele na <head> e colocar uma refencia a ele lá sem escrever em javascript no html somente fazendo
-	a referencia ao arquivo
+3	podemos trabalhar com eles chamando na linha de código <body> com o <script> e mandando executar alguma coisa ou podemos chamar ele na <head> e colocar uma referência a ele lá sem escrever em javascript no html somente fazendo
+	a referência ao arquivo
 
-4	ele funciona linha por linha igual ao html, conseguimos tambem fazer alguns metodos para ele chamar depois de ler ao inves de chamar na ordem correta, temos que tomar cuidado com a forma que escrevemos em javascript por causa disso
+4	ele funciona linha por linha igual ao html, conseguimos também fazer alguns métodos para ele chamar depois de ler ao invés de chamar na ordem correta, temos que tomar cuidado com a forma que escrevemos em javascript por causa disso
 	ou receberemos um aviso de undefined
 
-5	ele é extremamente importante pois é com ele que conseguimos fazer a comunicaçao com o servidor, gerar interações com html(mudar oque está escrito em um botão ou a cor de algo), com ele tmb que usamos os frameworks como node.js 
+5	ele é extremamente importante pois é com ele que conseguimos fazer a comunicação com o servidor, gerar interações com html(mudar o que está escrito em um botão ou a cor de algo), com ele também que usamos os frameworks como node.js 
 	entre outros que facilitam em muita a vida do dev
 
-6	Reactjs é uma biblioteca de codigos facilitando a escrita
+6	Reactjs é uma biblioteca de códigos, facilitando a escrita
 	jQuery é uma biblioteca que ajuda na hora de escrever scripts em html
-	Node.js é um framework que ajuda no lado do servidor ajudando quando o site tem varias requisiçoes ao mesmo tempo
+	Node.js é um framework que ajuda no lado do servidor ajudando quando o site tem várias requisições ao mesmo tempo
 
-7	a finalidade dela é referencia ou armazenar algo
+7	a finalidade dela é referência ou armazenar algo
 
 8	<script> 
 	{ 
@@ -26,26 +26,26 @@
 	}
 	</script>
 
-9	podemos usar desde um bloco de nota simples como o visual que é um abiente que ajuda com dicas de erro, completa as variaveis, funçoes ou caminhos que precisamos
+9	podemos usar desde um bloco de nota simples como o visual que é um ambiente que ajuda com dicas de erro, completa as variáveis, funções ou caminhos que precisamos
 
-10	Typescript é uma linguaguem de programção e um superconjunto de javascript, nele conseguimos usar tudo que temos no js e um pouco a mais, ele ajuda para pegarmos erros no javascript
+10	Typescript é uma linguagem de programação e um super conjunto de javascript, nele conseguimos usar tudo que temos no js e um pouco a mais, ele ajuda para pegarmos erros no javascript
 
 11	CRUD é popularmente chamado de interface de registro, ela é um sistema que deixa a gente criar, ler, atualizar ou deletar um arquivo, tudo que um banco de dados precisa
 
-12	XAMPP é um pacote com os principais servidores de código aberto do mercado, incluindo FTP, banco de dados MySQL e Apache com suporte as linguagens PHP e Perl, XAMPP é um servidor local que ajuda a fazer teste mais praticos
+12	XAMPP é um pacote com os principais servidores de código aberto do mercado, incluindo FTP, banco de dados MySQL e Apache com suporte as linguagens PHP e Perl, XAMPP é um servidor local que ajuda a fazer teste mais práticos
 
 13	Os Servidores Web são basicamente programas de computador simples que entregam a página web solicitada sob demanda do cliente da Web. Ex: Apache HTTP Server, NGINX e Node.js
 
-14	é um framework que simplifica a escrita do js e ajuda com uma imensa biblioteca de metodos prontos, a versão 4.3 do framework com seus planos para remover o jQuery
+14	é um framework que simplifica a escrita do js e ajuda com uma imensa biblioteca de métodos prontos, a versão 4.3 do framework com seus planos para remover o jQuery
 
-15	é um paradigma de programação, ela ajuda o dev usando metodos e classes, podemos reutilizar esses metodos e classes deixando o codigo mais limpo e rapido para ser programado
+15	é um paradigma de programação, ela ajuda o dev usando métodos e classes, podemos reutilizar esses métodos e classes deixando o código mais limpo e rápido para ser programado
 
-16	ES5 e ES6 são as versoes do javascript, a diferença entre eles é q na ultima versão foi colocado duas novas variaveis a let e a const, elas ajudam para evitar um erro que acontecia da variavel var, tmb tempos uma melhoria 
-	na orientação a objetos deixando ela mais rapido
+16	ES5 e ES6 são as versões do javascript, a diferença entre eles é q na última versão foi colocado duas novas variáveis a let e a const, elas ajudam para evitar um erro que acontecia da variável var, tmb tempos uma melhoria 
+	na orientação a objetos deixando-a mais rápido
 
 17	API rest é o modelo correto de implementar uma API, e API restful é uma API implementada de um jeito correto
 
-18	é uma requisição que acontece de forma continua pelo site, nela a pagina não precisa ser carregada, assim conseguimos que um metodo posso acontecer sem que a pagina seja carregada, simplificando as requisições feitas ao servidor
+18	é uma requisição que acontece de forma contínua pelo site, nela a página não precisa ser carregada, assim conseguimos que um método posso acontecer sem que a página seja carregada, simplificando as requisições feitas ao servidor
 
 19	é uma formatação utilizada para estruturar dados em formato de texto e transmiti-los de um sistema para outro pelas APIs
 
@@ -56,36 +56,60 @@
 
 21	é uma interface de usuário prática e que permita realizar solicitações HTTP sem a necessidade de escrever um monte de códigos e testar a funcionalidade de uma AP
 
-22	next js é uma ferramenta que deixa o dev usar o servidor para renderizar o site deixando algo pesado mais rapido de usar, tmb tem uma camada extra de proteção o node js é uma plataforma criada para fazer o site ficar mais 
-	rapido ele tambem é bom quando um site cresce e deixa ele com baixo custo
+22	next js é uma ferramenta que deixa o dev usar o servidor para renderizar o site deixando algo pesado mais rápido de usar, também tem uma camada extra de proteção o node js é uma plataforma criada para fazer o site ficar mais 
+	rápido ele também é bom quando um site o cresce e deixa com baixo custo
 
-23	angular js é a primeira versão e angular são as versoes seguintes 
+23	angular js é a primeira versão e angular são as versões seguintes 
 
 24	é uma ferramenta do node js que ajuda a administrar os arquivos, ele ajuda a implementar frameworks, retirar ou instalar determinada versão deles, deixando o site com uma menor quantidade erros por instalações erradas
 
-25	CleanCode é um metodo de escrita de codigos que deixa ele mais limpo e facil de um outra pessoa conseguir usar ele, EX: ao iniciar um variavel colocar um nome apropriado ao inves de um nome aleatorio, quando fazer um metodo
-	usar o nome como um verbo e indicar oq ele realmente vai fazer, ao fazer essas coisas a quantidade de comentario necesario para fazer o codigo ira diminuir deixando o codigo mais limpo e facil de ler para as pessoas
+25	CleanCode é um método de escrita de códigos que deixa ele mais limpo e fácil de uma outra pessoa conseguir usar ele, EX: ao iniciar uma variável colocar um nome apropriado ao invés de um nome aleatório, quando fazer um método
+	usar o nome como um verbo e indicar o que ele realmente vai fazer, ao fazer essas coisas a quantidade de comentário necessário para fazer o código irá diminuir deixando o código mais limpo e fácil de ler para as pessoas
 
-26	é um componente que ajuda a criar paginas dinamicas ele é rapido pois utiliza linguaguem compilada, assim na primeira vez pode demorar um pouco para compilar mas nas restantes ela vai ser mais rapida que a interpretada
+26	é um componente que ajuda a criar páginas dinâmicas ele é rápido pois utiliza linguagem compilada, assim na primeira vez pode demorar um pouco para compilar, mas nas restantes ela vai ser mais rápida que a interpretada
 
 27	O MVC funciona como um padrão de arquitetura de software que melhora a conexão entre as camadas de dados, lógica de negócio e interação com usuário. Através da sua divisão em três componentes, o processo de programação 
-	se torna algo mais simples e dinâmico. Por padrão existem a camada Model, Controller e View. O model é aonde ele faz a validação se as informações estão corretas, o controler é aonde faz a comunicação entre o model e o viewr
-	o viewr é a parte que o usuario ve e coloca informações
+	se torna algo mais simples e dinâmico. Por padrão existem a camada Model, Controller e View. O model é onde ele faz a validação se as informações estão corretas, o controler é onde faz a comunicação entre o model e o viewr
+	o viewr é a parte que o usuário vê e coloca informações
 
 28	O SASS era originalmente a sintaxe oficial e ela é um pouco diferente da sintaxe do CSS, sem chaves e pontos e virgulas. A sintaxe SCSS agora é a oficial e é mais parecida com a sintaxe do CSS
 
-29	microserviços são como o paradigma POO, são varios sistemas funcionando juntos para fazer um sistema, por exemplo o sistema de cadastro, nele a gente tem as informações como nome e etc..., ao enviar um email para essa pessoa,
-	a gente pega as informações que estão no cadastro para pegar o nome e o email dela e usamos outro microserviço para mandar o email. assim conseguimos dividir as aplicações achando o erro mais facilmente e melhorando elas
-	sem que tenha problema no resto do codigo
+29	micro serviços são como o paradigma POO, são vários sistemas funcionando juntos para fazer um sistema, por exemplo o sistema de cadastro, nele a gente tem as informações como nome e etc..., ao enviar um e-mail para essa pessoa,
+	a gente pega as informações que estão no cadastro para pegar o nome e o e-mail dela e usamos outro micro serviço para mandar o e-mail. assim conseguimos dividir as aplicações achando o erro mais facilmente e melhorando elas
+	sem que tenha problema no resto do código
 
-30	metodologia agil é o formato como a equipe trabalha, visando sempre mostrar o melhor e mais rapido resultado ao cliente, a metodologia SCRUM adiciona a isso pequenas reuniãos todo dia alem de alguma definida a cada 15 ou 30 dias
+30	metodologia ágil é o formato como a equipe trabalha, visando sempre mostrar o melhor e mais rápido resultado ao cliente, a metodologia SCRUM adiciona a isso pequenas reuniões todo dia além de alguma definida a cada 15 ou 30 dias
 	nela o gerente do projeto organiza pequenas tarefas e entrega para cada pessoa podendo mudar a prioridade de cada tarefa como ele desejar
 
-31	o UI é o design que se preocupa mais com a estetica do produto como ele aparece para o cliente e o UX design é o cara que se preocupa não só com isso mais como a pessoa vai mecher no site, deixando o usuario com uma experiencia
+31	o UI é o design que se preocupa mais com a estética do produto como ele aparece para o cliente e o UX design é o cara que se preocupa não só com isso mais como a pessoa vai mexer no site, deixando o usuário com uma experiencia
 	boa em relação ao site e querendo voltar
 
-32	GIT é para repositorio pessoal e ajuda a fazer o vercionamento do programa já GitHub é um site publico aonde qualquer pessoa pede ver o seu projeto(se vc deixar) e te ajudar a resolver problemas assim como vc tmb pode ajudar 
+32	GIT é para repositório pessoal e ajuda a fazer o versionamento do programa já GitHub é um site público onde qualquer pessoa pede ver o seu projeto (se você deixar) e te ajudar a resolver problemas assim como você também pode ajudar 
 
 33	é um código projetado para ser acessado abertamente pelo público: todas as pessoas podem vê-lo, modificá-lo e distribuí-lo conforme suas necessidades
 
-34	
+34	é uma plataforma especializada em fazer containers
+
+35	é uma plataforma especializada em orquestrar containers
+
+36	as diferenças são basicamente que se a empresa já utiliza ambiente e produtos Microsoft, a Azure seria a melhor opção por conta da familiaridade, integrações e descontos. Agora, se o que precisa de é alta escalabilidade mesmo, 
+	o ideal seria optar pela AWS.
+
+37	Oracle RDBMS, MySQL, Microsoft SQL Server
+
+38	A)	É uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante.
+	B)	Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações
+		móveis e software empresarial até aplicações de big data e tecnologias do servidor.
+	C)	PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário.
+	D)	O C é uma linguagem de programação de finalidade geral, utilizada no desenvolvimento de diversos tipos de aplicação, como processadores de texto, sistemas operacionais, sistemas de comunicação, programas para solução de
+		problemas de engenharia, física, química e outras ciências etc. 
+	E)	C++ é uma das linguagens mais versáteis que existem, permitindo desenvolver desde tarefas simples como aplicações na linha de comando ou web, até sistemas complexos de tempo real, muito usadas no mercado financeiro.
+	F)	C# é uma linguagem de programação orientada a objetos e orientada a componentes. C# fornece construções de linguagem para dar suporte diretamente a esses conceitos, tornando C# uma linguagem natural para criação e uso de
+		componentes de software. 
+	G)	Construção de sistemas Web, Análise de dados, Construção de aplicativos e Construção de sistemas desktop
+
+39	ambos os frameworks fazem a mesma função, tem doms virtuais e são ótimos para otimizar tempo na hora de programar graças a suas bibliotecas e constantes atualizações, o maior diferencia diferencial entre as duas é sua semântica
+	então ambas são ótimas para aprender, o que temos que levar em conta antes de aprender uma é se ela já está sendo utilizada no projeto
+
+40	é uma fermenta online para analisar alguns dados, entre eles estão: Número total de visitantes, visitante único e visitantes que retornam ao site, Resultados de e-commerce e Comportamento dos visitantes do seu site enquanto 
+	navegam nele entre outros, com essas informações conseguimos ver se o projeto inicial do site está correto e se precisamos mudar algo no site, auxiliando no crescimento e divulgação do site

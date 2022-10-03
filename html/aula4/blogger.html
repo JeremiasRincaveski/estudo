@@ -2,22 +2,39 @@
 <html>
 
 <head>
+    <!--<meta http-equiv="refresh" content="3">-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremias</title>
     <style>
-        /*chama o elemento <div> e faz alterações toda vez que ele for chamado, muito mais simples de implementar o css*/
-        div {
-
-            border: outset;
+        div{
+            border-color: black;
+            width: 50%;
+            margin: auto;
         }
 
-        table {
-            border: khaki;
-            color: blue;
+        td {
+            border: groove;
+            background-color: aqua;
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
         }
-        /*pega o tipo do input e modifica ele, mesma coisa do <div>*/
+
+        .tabela {
+            border: black;
+            color: black;
+            background-color: darkkhaki;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        code{
+            border-color: black;
+            color: black;
+            background-color: #000000 50%;
+        }
+
         input[type=text],
         [type=number],
         [type=email] {
@@ -33,67 +50,110 @@
 </head>
 
 <body>
-    <!--apresentação-->
     <div>
         <h3>blog do Jeremias</h3>
-        <p>este é um site sobre o conhecimento adiquirido até o momento(25/09/22)</p>
+        <p>este é um site sobre o conhecimento adiquirido até o momento (25/09/22)</p>
     </div>
-    <!--tabela office // css inline-->
     <div>
-        <!--border é a grosura da borda-->
-        <table border="1">
-            <!--<tr> é uma linha horizontal-->
+        <h3>&lt;tables&gt</h3>
+        <p>Para defenir uma table usamos as tags &lt;tables&gt;&lt;/tables&gt;.</p>
+        <p>Dentro da nossa &lt;tables&gt; vamos usar a tag &lt;tr&gt; que faz uma nova linha na tabela, após
+            fazermos isso temos as tags "th" e "td".&nbsp; A tag "th" deixa em negrito e coloca as palavras
+            centralizadas já a tag "td" deixa a escrita normal e simplesmente cria uma nova celula.
+        </p>
+        <p>aqui temos uma base para fazermos uma tabela</p>
+        <code>
+            &lt;table&gt;<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; colspan = "5" DADOS &lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;nome&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;sobrenome&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;idade&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;faculdade&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;data&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jeremias&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Rincaveski&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;21&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ESTACIO&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;29/09/22&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+        </code>
+        <p>e assim ira ficar a nossa tabela</p>
+        <table>
             <tr>
-                <!--colspan é a quantidade de colunas que essa linha vai ocupar(se colocar um valor maior  ela não passa da tabela)-->
                 <th colspan="4">DADOS</th>
             </tr>
-            <!---tr da uma nova linha na tabela--->
             <tr>
-                <!---th deixa em negrito e deixa no meio--->
                 <th>nome</th>
                 <th>sobrenome</th>
                 <th>idade</th>
                 <th>faculdade</th>
             </tr>
             <tr>
-                <!---td deixa normal--->
                 <td>Jeremias</td>
                 <td>Rincaveski</td>
                 <td>21</td>
                 <td>ESTACIO</td>
             </tr>
         </table>
+        <p>agora que aprendemos a fazer uma tabela vamos aprender um pouco de css</p>
+
+        <div>
+            <h3>css</h3>
+            <p>CSS é como vamos deixar o nosso site mais bonito, com ele podemos estilizar oque fizemos em HTML.</p>
+            <p>va ate ao head e coloque essas linhas dentro do &lt;style&gt;</p>
+            <code>
+                .tabela {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: black;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: black;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: darkkhaki;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: Georgia, 'Times New Roman', Times, serif;<br>
+                }
+            </code>
+            <p>ao colocar o .tabela estamos criando uma classe dentro do css, sempre que quisermor chamar ela devemos usar o seguinte codigo</p>
+            <code>
+                &lt;table class="tabela"&gt;
+            </code>
+            <p>observe a mudança que ocore na nossa tabela</p>
+            <table class="tabela" border="1" width="100%">
+                <tr>
+                    <th colspan="5"> DADOS </th>
+                </tr>
+                <tr>
+                    <th>nome</th>
+                    <th>sobrenome</th>
+                    <th>idade</th>
+                    <th>faculdade</th>
+                </tr>
+                <tr>
+                    <td>Jeremias</td>
+                    <td>Rincaveski</td>
+                    <td>21</td>
+                    <td>ESTACIO</td>
+                </tr>
+            </table>
+            <p>observe que podemos utilizar a classe tabela em outros lugares do nosso codigo porem devemos manter ele o mais limpo o possivel sempre
+                então se for usar a classe para uma fieldset por exemplo o ideal é fazer uma nova classe, sempre presando por um codigo limpo
+            </p>
+            <p>alem das classes conseguimos mudar tambem as tags</p>
+            <code>
+                td {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: groove;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: aqua;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-transform: uppercase;<br>
+                }
+            </code>
+        </div>
+
         <!--aqui temos o css inline, para coisas pequenas até pode valer a pena mas fica muito melhor colocar no <head>
         tmb podemos mudar a fonte da letra, a forma como ele é escrito(justificado, esquerda...) mas aqui temos que fazer isso toda vez com um objeto-->
-        <table border="1" align="center" width="60%">
-            <tr>
-                <th colspan="11"> ESTADOS </th>
-            </tr>
-
-            <tr>
-                <td style="color: blue;"> ACRE </td>
-                <td style="color: green;"> AC </td>
-                <td style="color: yellow;"> 13.000 </td>
-            </tr>
-
-            <tr>
-                <td style="color: blue;"> BRASILIA</td>
-                <td style="color: green;"> BR </td>
-                <td style="color: yellow;"> 33.000 </td>
-            </tr>
-
-            <tr>
-                <td style="color: blue;"> RORAIMA</td>
-                <td style="color: green;"> RR </td>
-                <td style="color: yellow;"> 90.000 </td>
-            </tr>
-
-            <tr>
-                <td style="color: blue;"> SANTA CATARINA</td>
-                <td style="color: green;"> SC </td>
-                <td style="color: yellow;"> 80.000 </td>
-            </tr>
-        </table>
     </div>
     <!--lista-->
     <div>

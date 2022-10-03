@@ -4,12 +4,41 @@
 
 int main(void)
 {
-    int valor[5] = {0, 0, 0, 0, 0}, aux;
+    int valor1,valor2,valor3,valor4,valor5,aux = 9999999;
+    printf("insira o valor: ");
+    scanf("%d", &valor1);
+    printf("insira o valor: ");
+    scanf("%d", &valor2);
+    printf("insira o valor: ");
+    scanf("%d", &valor3);
+    printf("insira o valor: ");
+    scanf("%d", &valor4);
+    printf("insira o valor: ");
+    scanf("%d", &valor5);
 
-    for (int i = 0; i < 5; i++)
+    if (valor1 < aux)
     {
-        printf("digite um valor: ");
-        scanf("%d", valor[i]);
+        aux = valor1;
     }
-    printf("%d", valor[3]);
+    if (valor2 < aux)
+    {
+        aux = valor2;
+    }
+    if (valor3 < aux)
+    {
+        aux = valor3;
+    }
+    if (valor4 < aux)
+    {
+        aux = valor4;
+    }
+    if (valor5 < aux)
+    {
+        aux = valor5;
+    }
+    
+    printf("menor valor eh %d\n",aux);
+
+    system("PAUSE");
+    return 0;
 }
