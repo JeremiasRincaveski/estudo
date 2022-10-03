@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<meta http-equiv="refresh" content="3">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias</title>
+    <style>
+        div {
+            border-color: black;
+            width: 100%;
+            margin: auto;
+        }
+
+        .td {
+            border: groove;
+            background-color: aqua;
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .tabela {
+            border: black;
+            color: black;
+            background-color: darkkhaki;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        code {
+            border-color: black;
+            color: black;
+            background-color: #000000 50%;
+        }
+
+        input[type=text],
+        [type=number],
+        [type=email] {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        code {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#Principais browsers">Principais browsers</a><br>
+    <a href="#Principais cidades do Brasil">Principais cidades do Brasil</a><br>
+    <a href="#Linguagens de internet">Linguagens de internet</a><br>
+    <a href="#blog do Jeremias">blog do Jeremias</a><br>
+    <a name="Principais browsers"></a>
+    <h2>Principais browsers</h2>
+    <ul>
+        <li>Internet Explorer</li>
+        <li>Opera</li>
+        <li>Firefox</li>
+        <li>Safari</li>
+    </ul>
+    <a name="Principais cidades do Brasil"></a>
+    <h2>Principais cidades do Brasil</h2>
+    <ol>
+        <li>São Paulo</li>
+        <li>Rio de Janeiro</li>
+        <li>Belo Horizonte</li>
+        <li>Brasília</li>
+    </ol>
+    <a name="Linguagens de internet"></a>
+    <h2>Linguagens de internet</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de texto</dd>
+        <dt>CSS</dt>
+        <dd>Usado para formatação de documentos</dd>
+    </dl>
+    <div>
+        <a name="blog do Jeremias"></a>
+        <h3>blog do Jeremias</h3>
+        <p>este é um site sobre o conhecimento adiquirido até o momento (25/09/22)</p>
+    </div>
+    <div>
+        <h3>&lt;tables&gt</h3>
+        <p>Para defenir uma table usamos as tags &lt;tables&gt;&lt;/tables&gt;.</p>
+        <p>Dentro da nossa &lt;tables&gt; vamos usar a tag &lt;tr&gt; que faz uma nova linha na tabela, após
+            fazermos isso temos as tags "th" e "td".&nbsp; A tag "th" deixa em negrito e coloca as palavras
+            centralizadas já a tag "td" deixa a escrita normal e simplesmente cria uma nova celula.
+        </p>
+        <p>aqui temos uma base para fazermos uma tabela</p>
+        <!--só quero deixar minha nota de raiva pq só dps que eu fiz tudo isso identado de forma correto que eu descobri a tag <pre>, pqp
+        <code>
+            &lt;table&gt;<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt; colspan = "5" DADOS &lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;nome&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;sobrenome&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;idade&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;faculdade&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;data&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jeremias&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Rincaveski&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;21&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ESTACIO&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;29/09/22&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+        </code>
+        -->
+        <code>
+            <pre>
+            &lt;table&gt;<br> 
+                &lt;tr&gt;<br>
+                colspan = "5" DADOS &lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;th&gt;nome&lt;/th&gt;<br>
+                    &lt;th&gt;sobrenome&lt;/th&gt;<br>
+                    &lt;th&gt;idade&lt;/th&gt;<br>
+                    &lt;th&gt;faculdade&lt;/th&gt;<br>
+                    &lt;th&gt;data&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                    &lt;td&gt;Jeremias&lt;/td&gt;<br>
+                    &lt;td&gt;Jeremias&lt;/td&gt;<br>
+                    &lt;td&gt;Jeremias&lt;/td&gt;<br>
+                    &lt;td&gt;Jeremias&lt;/td&gt;<br>
+                    &lt;td&gt;Jeremias&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+            </pre>
+        </code>
+        <p>e assim ira ficar a nossa tabela</p>
+        <table>
+            <tr>
+                <th colspan="4">DADOS</th>
+            </tr>
+            <tr>
+                <th>nome</th>
+                <th>sobrenome</th>
+                <th>idade</th>
+                <th>faculdade</th>
+            </tr>
+            <tr>
+                <td>Jeremias</td>
+                <td>Rincaveski</td>
+                <td>21</td>
+                <td>ESTACIO</td>
+            </tr>
+        </table>
+        <p>agora que aprendemos a fazer uma tabela vamos aprender um pouco de css</p>
+
+        <div>
+            <h3>css</h3>
+            <p>CSS é como vamos deixar o nosso site mais bonito, com ele podemos estilizar oque fizemos em HTML.</p>
+            <p>va ate ao head e coloque essas linhas dentro do &lt;style&gt;</p>
+            <code>
+                .tabela {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: black;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: black;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: darkkhaki;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: Georgia, 'Times New Roman', Times, serif;<br>
+                }
+            </code>
+            <p>ao colocar o .tabela estamos criando uma classe dentro do css, sempre que quisermor chamar ela devemos
+                usar o seguinte codigo</p>
+            <code>
+                &lt;table class="tabela"&gt;
+            </code>
+            <p>observe a mudança que ocore na nossa tabela</p>
+            <table class="tabela" border="1" width="100%">
+                <tr>
+                    <th colspan="5"> DADOS </th>
+                </tr>
+                <tr>
+                    <th>nome</th>
+                    <th>sobrenome</th>
+                    <th>idade</th>
+                    <th>faculdade</th>
+                </tr>
+                <tr>
+                    <td>Jeremias</td>
+                    <td>Rincaveski</td>
+                    <td>21</td>
+                    <td>ESTACIO</td>
+                </tr>
+            </table>
+            <p>observe que podemos utilizar a classe tabela em outros lugares do nosso codigo porem devemos manter ele o
+                mais limpo o possivel sempre
+                então se for usar a classe para uma fieldset por exemplo o ideal é fazer uma nova classe, sempre
+                presando por um codigo limpo
+            </p>
+            <p>alem das classes conseguimos mudar tambem as tags</p>
+            <code>
+                <pre>
+td {<br>
+    border: groove;<br>
+    background-color: aqua;<br>
+    color: red;<br>
+    text-align: center;<br>
+    text-transform: uppercase;<br>
+    }
+                </pre>
+            </code>
+            <table class="tabela" border="1" width="100%">
+                <tr>
+                    <th colspan="5"> DADOS </th>
+                </tr>
+                <tr>
+                    <th>nome</th>
+                    <th>sobrenome</th>
+                    <th>idade</th>
+                    <th>faculdade</th>
+                </tr>
+                <tr class="td">
+                    <td>Jeremias</td>
+                    <td>Rincaveski</td>
+                    <td>21</td>
+                    <td>ESTACIO</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div>
+        <h2>lista ordenada e não ordenada</h2>
+        <p>começaremos pela lista ordenada, ao definir uma lista ordenada ela ira enumerar cada idem da nossa lista
+            automaticamente</p>
+        <pre>
+        <code>
+        &lt;ol&gt;
+            &lt;li&gt;Jeremias&lt;/li&gt;
+            &lt;li&gt;Rincaveski&lt;/li&gt;
+            &lt;li&gt;21&lt;/li&gt;
+            &lt;li&gt;ESTACIO&lt;/li&gt;
+        &lt;/ol&gt;     
+        </code>
+    </pre>
+        <ol>
+            <li>Jeremias</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ol>
+        <p>agora iremos fazer uma não ordenada</p>
+        <code>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Jeremias&lt;/li&gt;
+    &lt;li&gt;Rincaveski&lt;/li&gt;
+    &lt;li&gt;21&lt;/li&gt;
+    &lt;li&gt;ESTACIO&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+        </code>
+        <ul>
+            <li>Jeremias</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ul>
+        <p>uma pequena resalva que temos que fazer, caso a tag &lt;ol&gt; ou &lt;ul&gt; não forem declarados
+            a lista ira ficar mais a direita fora da caixa invisivel que é a lista e ficara desordenada
+        </p>
+        <code>
+            <pre>
+&lt;li&gt;Jeremias&lt;/li&gt;
+&lt;li&gt;Rincaveski&lt;/li&gt;
+&lt;li&gt;21&lt;/li&gt;
+&lt;li&gt;ESTACIO&lt;/li&gt;
+            </pre>
+        </code>
+        <li>Jeremias</li>
+        <li>Rincaveski</li>
+        <li>21</li>
+        <li>ESTACIO</li>
+    </div>
+    <ol>
+        <li>Jeremias</li>
+        <li>Rincaveski</li>
+        <li>21</li>
+        <li>ESTACIO</li>
+        <ol>
+            <li>1 Jeremias <br>1</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ol>
+        <ol>
+            <li>Jeremias</li>
+            <li>Rincaveski</li>
+            <li>21</li>
+            <li>ESTACIO</li>
+        </ol>
+        </ul>
+        <!--tabela para dados -->
+        <div>
+            <!-- cria uma tabela com o objetivo de receber dados-->
+            <fieldset>
+                <!-- titulo da tabela-->
+                <legend>informação de contato</legend>
+                <!-- o <p> faz ficar tudo em uma linha, <label>(usado para pegar informações tipo o
+            id de algo para usar ele) fala oque vai ter na linha, <input> mostra algo
+            para a pessoa, normalmente são colocados separados mas assim consegue economizar linha
+            porem vai ficar ruim de entender quando precisar colocar o id, name e outros atributos no
+            elemento, quando for fazer EVITAR ESSE MODELO-->
+                <p><label>E-mail<input type="E-mail" name="E-mail"></label></p>
+                <p><label>web site<input type="url" name="website"></label></p>
+                <p><label>telefone<input type="telefone" name="fone" placeholder="(00)000000000"></label></p>
+            </fieldset>
+            <fieldset>
+                <!-- aqui o nome tem que ser iguak ou não funciona, assim ele seleciona somente um valor, se deixar o "name" diferente ele deixa selecionar mais de um-->
+                <label>Na frase:"Eu sou bonito" o sujeito é</label><br>
+                <input type="radio" id="sujeito" name="nome" value="Brad">
+                <label>Brad Pit</label><br>
+                <input type="radio" id="sujeito" name="nome" value="Joâo">
+                <label>Joâo da padaria</label><br>
+                <input type="radio" id="sujeito" name="nome" value="VocêMesmo">
+                <label>Você mesmo</label><br>
+                <input type="radio" id="sujeito" name="nome" value="Meus">
+                <label>Meus pais</label><br>
+                <input type="radio" id="sujeito" name="nome" value="Eu">
+                <label>Eu</label><br><br>
+            </fieldset>
+            <fieldset>
+                <!--aqui é o formato mais normal que eu achei de mostrar a linha e mandar o input
+            ássim pfica mais facil de ler os atributos dentro do input e do label-->
+                <legend>informações do aluno</legend>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome"><br><br>
+                <input type="number" id="nGrupo" name="nGrupo" placeholder="N° de pessoas no grupo"><br><br>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email"><br><br>
+                <label for="date">Data de nascimento</label><br>
+                <input type="date" id="data" name="data" placeholder="dd/mm/aaaa"><br><br>
+                <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite uma senha">
+            </fieldset>
+        </div>
+        <!--imagens // link-->
+        <div>
+            <!--<alt> forma como o sistema le caso a imagem n consiga ser caregada, muito importante usar tmb
+        para pessoas cegas quando forem tentar acesar o site-->
+            <!--pega na pasta do site-->
+            <img src="imagem1.png" alt="Livro de portugues, com palavras saindo dele">
+            <!--pega caso esteja em outra pasta-->
+            <img src="/C:/Users/aluno/Downloads/aula2/css.png">
+            <!--pega em um site-->
+            <img
+                src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo=w240-h480-rw">
+
+            <!--target = "_blank" faz abrir uma aba nova, se tirar ele vai entrar no site que a gente mandou e sair do nosso-->
+            <a href="https://www.globo.com" target="_blank">visite o site da globo.com</a>
+        </div>
+        <!--modificadores de texto-->
+        <div>
+            <!--<br> tmb quebra a linha igual "\n"-->
+            <p>Nesta frase temos <b>um termo em negrito</b> usando a tag B(não semântica)</p>
+            <p>Nesta frase, tenho <strong>um termo em destaque</strong> usando a tag STRONG (semântica)</p>
+            <h2>Italico/Ênfase</h2>
+            <p>Nesta frase, temos um<i> termo em italico</i> usando a tag I(não semântica)</p>
+            <p>Nesta frase, temos um<em> termo em ênfase</em> usando a tag EM(semântica)</p>
+            <h2>texto marcado</h2>
+            <p>podemos cirar tambem <mark>um texto marcado</mark> usando a tag MARK</p>
+            <p>e no outro paragrafo, temos <mark>outro trexo marcado</mark> no final</p>
+            <h2>Texto grande e pequeno</h2>
+            <p>Estamos criando um<span style="font-size: 40px;"> texto grande</span> e um <small>texto pequeno</small>
+                neste
+                paragrafo</p>
+            <h2>Texto deletado</h2>
+            <p>podemos marcar <del>um texto como excluido</del> para indicar que deve ser lido mais não considerado</p>
+            <h2>texto inserido</h2>
+            <p>podemos marcar <u>um texto como inserido</u> para dar enfase e indicar que ele foi adicionado depois</p>
+            <p>existe tambem o <u>sublinhado</u> com a tag u(não semântica)</p>
+            <h2>texto sobrescrito</h2>
+            <p>para inserir coisas do tipo x<sup>20</sup>+3</p>
+            <h2>texto subscrito</h2>
+            <p>para inserir coisas do tipo H<sub>2</sub>O</p>
+        </div>
+</body>
+
+</html>
