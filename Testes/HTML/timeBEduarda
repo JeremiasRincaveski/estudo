@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+
+            background-color: lightwhite;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        p {
+            font-family: Optima, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h2>Teste de fomulários</h2>
+        <fieldset>
+            <p><label for="fname">Nome completo:</label><br>
+                <input type="text" class="form-control" id="ec-mobile-number" aria-describedby="emailHelp"
+                    placeholder="Digite o seu Nome" />
+            </p>
+            <p><label for="fname">Email:</label><br>
+                <input type="text" class="form-control" id="ec-mobile-number" aria-describedby="emailHelp"
+                    placeholder="Digite seu email" /><br>
+                <button>Enviar</button>
+            <fieldset><br>
+                Qual o seu sistema operacional?<br>
+                <form name="input" action="html_form_action.asp" method="get">
+                    Windows:
+                    <input type="checkbox" name="bike" checked>
+                    <br>
+                    Linux:
+                    <input type="checkbox" name="car">
+                    <br>
+                    <input type="submit" value="Enviar"><br><br>
+                    Qual o seu gênero?<br>
+                    <form name="input" action="html_form_action.asp" method="get">
+                        Masculino:
+                        <input type="radio" name="Sex" value="male" checked>
+                        <br>
+                        Feminino:
+                        <input type="radio" name="Sex" value="female">
+                        <br>
+                        Outro:
+                        <input type="radio" name="Sex" value="male" checked><br>
+                        Não quero informar
+                        <input type="radio" name="Sex" value="male" checked><br>
+                        <input type="submit" value="Enviar"><br><br>
+
+                        Nome:<br>
+                        <input type="text" name="name" placeholder="Primeiro nome" /></p>
+                        Sobrenome:<br>
+                        <input type="text" name="name" placeholder="Sobrenome" /></p>
+                        Correio:<br>
+                        <input type="text" name="mail" placeholder="Digite seu email" /></p>
+                        Comentário:<br>
+                        <input type="text" name="comment" placeholder="Faça um comentário" /></p><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar"><br><br>
+
+                        <div>
+                            <label for="username">Login:</label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div>
+                            <label for="pass">Password :</label>
+                            <input type="password" id="pass" name="password" minlength="8" required>
+                            <p> Senha miníma de 8 caracteres para a realizar login!</p>
+                        </div>
+                        <input type="submit" value="Sign in">
+                    </form>
+                    </p>
+</body>
+
+</html>
