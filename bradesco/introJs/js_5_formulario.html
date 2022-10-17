@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma{
+            var valor1 = document.formulario.numero1.value
+            var valor2 = document.formulario.numero2.value
+
+            window.alert(valor1 + valor2)
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="formulario" method="post">
+        informe o valor 1 <input type="number" name="numero1" id=""><br>
+        informe o valor 2 <input type="number" name="numero2" id=""><br>
+        <input type="button" value="somar" soma()>
+    </form>
+</body>
+</html>

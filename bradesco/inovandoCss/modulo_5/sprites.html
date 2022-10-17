@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu ul li {
+            display: inline;
+        }
+
+        #menu ul li a{
+            float: left;
+            width: 82px;
+            height: 78px;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background: url('img/manaus.jpg') no-repeat scroll 0 0 transparent;
+        }
+        #menu ul li.home a{background-position: 0px 0px;}
+        #menu ul li.agenda a{background-position: 91px 0px;}
+        #menu ul li.contato a{background-position: 181px 0px;}
+
+        #menu ul li.home a:hover{background-position: 0px 78px;}
+        #menu ul li.home a:hover{background-position: -91px -78px;}
+        #menu ul li.home a:hover{background-position: -181px -78px;}
+
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li class="home"><a href="#"></a></li>
+            <li class="agenda"><a href="#"></a></li>
+            <li class="contato"><a href="#"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
