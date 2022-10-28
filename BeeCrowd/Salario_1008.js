@@ -1,0 +1,6 @@
+numero = parseInt(lines.shift())
+horas = parseInt(lines.shift())
+valorHora = parseFloat(lines.shift())
+salario = (horas * valorHora)
+console.log("NUMBER = " + numero)
+console.log("SALARY = U$ " + salario.toFixed(2))

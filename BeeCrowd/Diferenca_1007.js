@@ -1,0 +1,6 @@
+valor1 = parseFloat(lines.shift())
+valor2 = parseFloat(lines.shift())
+valor3 = parseFloat(lines.shift())
+valor4 = parseFloat(lines.shift())
+diferenca = (valor1 * valor2 - valor3 * valor4)
+console.log("DIFERENCA = " + diferenca)
