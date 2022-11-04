@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="calendario">
+        informe o mes <input type="number" id="mes"><br>
+        <input type="button" value="mostrar o mes" onclick="adv()">
+        <input type="text" id="mesEscolhido">
+    </form>
+
+    <script>
+        console.log('jbafsa')
+        function adv() {
+            js_mes = parseInt(document.getElementById("mes").value)
+            console.log(js_mes)
+            switch (js_mes) {
+                case 1: document.getElementById("mesEscolhido").value = 'janeiro'; break;
+                case 2: document.getElementById("mesEscolhido").value = 'fevereiro'; break;
+                case 3: document.getElementById("mesEscolhido").value = 'marco'; break;
+                case 4: document.getElementById("mesEscolhido").value = 'abril'; break;
+                case 5: document.getElementById("mesEscolhido").value = 'maio'; break;
+                case 6: document.getElementById("mesEscolhido").value = 'junho'; break;
+                case 7: document.getElementById("mesEscolhido").value = 'julho'; break;
+                case 8: document.getElementById("mesEscolhido").value = 'agosto'; break;
+                case 9: document.getElementById("mesEscolhido").value = 'setembro'; break;
+                case 10: document.getElementById("mesEscolhido").value = 'outubro'; break;
+                case 11: document.getElementById("mesEscolhido").value = 'novembro'; break;
+                case 12: document.getElementById("mesEscolhido").value = 'dezembro'; break;
+                default: document.getElementById("mesEscolhido").value = 'mes idefinido'; break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="formulario">
+        id quantidade valor<input type="text" name="linha1" id="nota1"><br>
+        valor<input type="number" id="nota2"><br>
+        id quantidade valor<input type="text" id="nota3"><br>
+        valor<input type="number" id="nota4"><br>
+        <input type="button" value="tafarel" onclick="magica()">
+    </form>
+    <script>
+
+
+
+        function magica() {
+            validaAB = true
+            validaAC = true
+            validaBC = true
+            let aux = 0
+
+            linha = prompt()
+            linha = linha.split(' ')
+
+            a = parseFloat(linha[0])
+            b = parseFloat(linha[1])
+            c = parseFloat(linha[2])
+
+            aux = a + b
+            if (aux < c) {
+                validaAB = true
+                console.log('passou na AB');
+            }
+            aux = a + c
+            if (aux < b) {
+                validaAB = true
+                console.log('passou na AC');
+            }
+            aux = c + b
+            if (aux < a) {
+                validaAB = true
+                console.log('passou na BC');
+            }
+            aux = 0
+            if ((validaAB == true) && (validaBC == true)
+             && (validaAC == true)) {
+                console.log(a, b, c);
+                aux = a + b + c
+                console.log("Perimetro = " + aux.toFixed(1));
+            } else {
+                console.log(a, b, c);
+                aux = ((a + b) * c) / 2
+                console.log(aux);
+                console.log("Area = " + aux.toFixed(1));
+            }
+        }
+    </script>
+</body>
+
+</html>

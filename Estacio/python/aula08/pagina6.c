@@ -12,11 +12,11 @@ int main()
 
     celula *criar_celula()
     {
-        celula *novo = (celula *)malloc(sizeof(celula));
+        celula *novo = (celula*)malloc(sizeof(celula));
         return novo;
     }
 
-    celula *inserir_celula_inicio(celula * lista, int dado)
+    celula *inserir_celula_inicio(celula* lista, int dado)
     {
         celula *nova_celula = criar_celula()
         nova_celula->conteudo = dado;
@@ -33,10 +33,10 @@ int main()
         return lista;
     }
 
-    void imprimir_lista(celula * lista)
+    void imprimir_lista(celula* lista)
     {
-        celula *aux = lista;
-        while (aux != NULL)
+        celula *aux =lista;
+        while (aux!=NULL)
         {
             printf("%d", aux->conteudo);
             printf("\n");
@@ -45,10 +45,10 @@ int main()
     }
 
     celula *lista = NULL
-    lista = inserir_celula_inicio(lista, 10);
-    lista = inserir_celula_inicio(lista, 20);
-    lista = inserir_celula_inicio(lista, 30);
-    lista = inserir_celula_inicio(lista, 40);
+    lista=inserir_celula_inicio(lista, 10);
+    lista=inserir_celula_inicio(lista, 20);
+    lista=inserir_celula_inicio(lista, 30);
+    lista=inserir_celula_inicio(lista, 40);
     imprimir_lista(lista);
     return 0;
 }

@@ -3,18 +3,20 @@
 
 int main(void)
 {
+    int av1;
+    int av2;
 
-    int nota1 = 0;
-    int nota1 = 0;
-    printf("digite o valor da conta ");
-    scanf("%d", &valorConta);
+    printf("digite a primeira nota: ");
+    scanf("%d", &av1);
 
-    if (valorConta > 150)
+    printf("digite a segunda nota: ");
+    scanf("%d", &av2);
+
+    if (((av1 + av2) / 2) < 7)
     {
-        printf("voce esta gastando muito\n");
+        printf("precisa fazer a AV3\n");
     }
     
     system("PAUSE");
     return 0;
-
 }
