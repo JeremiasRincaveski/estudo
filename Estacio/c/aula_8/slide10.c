@@ -20,6 +20,7 @@ int main()
         printf("sexo: %c, menor de 60 anos", sexo);
         printf("\n");
     }
+    
     system("PAUSE");
     return (0);
 }

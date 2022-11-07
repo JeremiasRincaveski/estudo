@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
 
         const task = input.value;
 
+
+
         const task_el = document.createElement('div');
         task_el.classList.add('task');
 
@@ -26,10 +28,6 @@ window.addEventListener('load', () => {
 
         const task_actions_el = document.createElement('div');
         task_actions_el.classList.add('actions');
-        
-        const task_comp_el = document.createElement('button')
-        task_comp_el.classList.add('edit')
-        task_comp_el.innerText = 'completar'
 
         const task_edit_el = document.createElement('button');
         task_edit_el.classList.add('edit');
@@ -39,7 +37,6 @@ window.addEventListener('load', () => {
         task_delete_el.classList.add('delete');
         task_delete_el.innerText = 'Deletar';
 
-        task_actions_el.appendChild(task_comp_el);
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);
 
@@ -47,7 +44,7 @@ window.addEventListener('load', () => {
 
         list_el.appendChild(task_el);
 
-        input.value = '';
+        input.value = " ";
 
         task_edit_el.addEventListener('click', (e) => {
             if (task_edit_el.innerText.toLowerCase() == "edit") {
@@ -64,11 +61,9 @@ window.addEventListener('load', () => {
             list_el.removeChild(task_el);
         });
 
-        task_comp_el.addEventListener('click', (e) => {
-            aux = task_input_el.innerHTML.value
-            console.log(aux);
-            task_input_el.innerHTML = "<strong>"+ aux + "</strong>"
-            console.log(task_input_el.value);
-        });
+        $(document).on('click', '.text', function () {
+            $(this).toggleClass("scratch");
+        })
+
     });
 });
