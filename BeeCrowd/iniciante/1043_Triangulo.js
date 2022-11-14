@@ -1,37 +1,14 @@
-validaAB = false
-validaAC = false
-validaBC = false
-aux = 0
-
 linha = lines.shift()
 linha = linha.split(' ')
-
-a = linha[0]
-b = linha[1]
-c = linha[2]
-
-if (!validaAB) {
-    aux = a + b
-    if (aux < c) {
-        validaAB = true
-    }
-}
-if (!validaAC) {
-    aux = a + c
-    if (aux < b) {
-        validaAB = true
-    }
-}
-if (!validaBC) {
-    aux = c + b
-    if (aux < a) {
-        validaAB = true
-    }
-}
-if (validaAB && validaBC && validaAC) {
-    aux = a + b + c
-    console.log("Perimetro = " + aux.toFixed(1));
+a = parseFloat(linha[0])
+b = parseFloat(linha[1])
+c = parseFloat(linha[2])
+let perimetro
+let area
+if ((b - c) < a && a < (b + c) && (a - c) < b && b < (a + c) && (a - b) < c && c < (a + b)) {
+    perimetro = a + b + c
+    console.log("Perimetro = " + perimetro.toFixed(1))
 } else {
-    aux = ((a + b) * c) / 2
-    console.log("Area = " + aux.toFixed(1));
+    area = ((a + b) * c) / 2.0
+    console.log("Area = " + area.toFixed(1))
 }

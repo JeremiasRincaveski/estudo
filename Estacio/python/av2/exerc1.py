@@ -1,0 +1,17 @@
+nome = "Douglas Mendes"
+print (nome[0:1])
+print (nome[0:2])
+print (nome[0:3])
+print (nome[0:4])
+print (nome[0:5])
+print (nome[0:6])
+print (nome[0:7])
+#colocar : faz com que ele leia todos os elementos 
+print (nome[:1])
+print (nome[:2])
+print (nome[:3])
+print (nome[:4])
+print (nome[:5])
+print (nome[:6])
+print (nome[:7])
+print (nome[:])

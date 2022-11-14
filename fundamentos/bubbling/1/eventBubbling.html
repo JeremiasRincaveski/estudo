@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Event Bubbling</title>
+</head>
+
+<body>
+    <div id="pai">pai
+        <div id="filho">filho
+            <div id="neto">neto</div>
+        </div>
+    </div>
+
+    <script src="eventBubbling.js"></script>
+    <script>
+        const pai1 = document.getElementById('pai');
+        pai1.addEventListener('click', e => console.log(event.target.id), true);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="example.css">
+</head>
+
+<body>
+    <div onclick="alert('Evento disparado!')">
+        <em>Nesta área experimente clicar no elemento <code>EM</code> aninhado não clicando no <code>DIV</code> e
+            observe que há o disparo do alerta.</em>
+    </div>
+    <div class="d1">1
+        <div class="d2">2
+            <div class="d3">3
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var divs = document.getElementsByTagName('div')
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].onclick = function (e) {
+            e = e || event
+            var target = e.target || e.srcElement
+            this.style.backgroundColor = 'yellow'
+            alert("target = " + target.className + ", this=" + this.className)
+            this.style.backgroundColor = ''
+        }
+    }
+</script>
+
+</html>
